@@ -31,7 +31,7 @@
                   <a class="nav-link" href="/form">입력폼</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/list">데이터목록</a>
+                    <a class="nav-link" href="/list">데이터목록</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
@@ -42,43 +42,27 @@
           </nav>
     </div>  
     <br>
-    <div class="container-fluid">
-      <div class="jumbotron" style="background-image: url('/static/img02.jpg'); background-repeat: no-repeat;background-size: cover;">
-        <h1 class="display-4" style="color: darkgrey;font-family: 'East Sea Dokdo', cursive;">kgitbank 데이터 분석</h1>
-        <p class="lead" style="color: darkgrey;">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p style="color: darkgrey;">It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div>
+    <div class="container">
+        <form action="/inputdata" method="get">
+            <div class="form-group">
+              <label for="Name">Name</label>
+              <input type="text" class="form-control" id="Name" name="Name" >
+            </div>
+            <div class="form-group">
+                <label for="Email">Email address</label>
+                <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="Password">Password</label>
+              <input type="password" class="form-control" id="Password" name="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
     </div>
     <br>
     <div class="container-fluid">
-      <div class="card-group">
-        <div class="card">
-          <img src="/static/img01.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/static/img02.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/static/img03.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>  
+     
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
