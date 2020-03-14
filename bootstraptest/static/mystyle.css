@@ -1,1 +1,11 @@
+*{color:gray;}
 p{color:#ff0000;}
+body {
+    background-color: lightblue;
+  }
+h2 {
+color: white;
+text-align: center;
+}
+
+p span{color:blue;}
